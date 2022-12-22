@@ -1,0 +1,40 @@
+mat-card-header {
+    display: block;
+
+  
+    .mat-card-container {
+      float: center;
+      margin-top: -45px;
+      margin-right: 40px;
+  
+      .subtitle2 {
+        display: block;
+      }
+    }
+  
+  }
+
+  .center-text {
+    text-align: center;
+  }
+  
+  mat-card-content p {
+    text-align: justify;
+   
+  }
+  
+  mat-card-actions {
+    text-align: center;
+  
+    button {
+      margin-bottom: 10px !important;
+    }
+    button:hover {
+      border: 1px solid #007aff;
+    }
+  }
+  
+  .mdc-card {
+    align-items: center;
+    text-align: center;
+  }
