@@ -17,14 +17,11 @@ const RESULTS_ROUTE = '/results';
 export class QuizPageComponent {
   @Output() question: PersonalityQuestion | undefined;
   totalQuestions: number = 10;
-  completionTime: number | undefined;
   allPersonalities: PersonalityTypes[] = [];
 
   questionID = 0;
   currentQuestion = 0;
   questionIndex: number = 0;
-  disabled: boolean = true;
-  quizIsOver: boolean = false;
   progressValue: number = 0;
 
   allQuestions = testData;

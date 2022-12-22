@@ -14,9 +14,7 @@ export class QuestionComponent {
   @Output() answer = new EventEmitter<Option>();
   @Output() formGroup!: FormGroup;
   @Input() question: PersonalityQuestion | undefined;
-  option = '';
-  grayBorder = '2px solid #979797';
-  
+ 
 
   constructor() {}
 
@@ -41,7 +39,6 @@ export class QuestionComponent {
     if(this.question)
     this.question.selectedOption = option;
     option.selectedOption=true;
-    console.log(option);
     this.answer.emit(option);
   }
 
