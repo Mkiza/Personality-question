@@ -17,10 +17,10 @@ export class ResultsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dataService.data$.subscribe(data => {
-      this.allPersonalities = data;
-    });
-    this.findMostOccurringPersonality(this.allPersonalities);
+      this.dataService.data$.subscribe(data => {
+        this.allPersonalities = data;
+      });
+      this.findMostOccurringPersonality(this.allPersonalities);
   }
 
   findMostOccurringPersonality(allPersonalities: PersonalityTypes[]): PersonalityTypes | null {
